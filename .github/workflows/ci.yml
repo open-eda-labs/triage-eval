@@ -1,0 +1,14 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    # Convenção da org: o lint mora no repositório .github.
+    uses: open-eda-labs/.github/.github/workflows/lint.yml@main
