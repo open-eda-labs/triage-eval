@@ -10,14 +10,5 @@ permissions:
 
 jobs:
   lint:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 5
-    steps:
-      # Pendência: pinar por SHA de commit (D-40).
-      - uses: actions/checkout@v4.2.2
-        with:
-          persist-credentials: false
-      - name: yamllint
-        run: pipx run yamllint==1.35.1 --strict .
-      - name: markdownlint
-        run: npx --yes markdownlint-cli2@0.14.0 "**/*.md"
+    # Convenção da org: o lint mora no repositório .github.
+    uses: open-eda-labs/.github/.github/workflows/lint.yml@main

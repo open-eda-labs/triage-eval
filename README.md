@@ -12,8 +12,4 @@ Este repositório faz parte do laboratório open-eda-labs: workflows agênticos 
 
 A fonte da verdade é o [Plano Mestre](https://github.com/open-eda-labs/open-eda-labs.github.io/blob/main/docs/PLANO_MESTRE.md).
 
-## Regras
-
-- Só dados sintéticos ou públicos; nenhum dado, código ou nome de empresa (D-24, D-27).
-- Tudo como código, versões pinadas e segredos fora do Git (D-40).
-- Mudanças entram por pull request; o agente nunca faz merge (D-02, D-31).
+As regras do laboratório valem para todos os repositórios e estão no [perfil da organização](https://github.com/open-eda-labs).
